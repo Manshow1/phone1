@@ -1,0 +1,26 @@
+.swiper-slide13{
+	width: 100%;
+	height: 100%;
+	background: url(../img/pudao.png) no-repeat;
+	background-size:100% 100%;
+	color: #FFFFFF;
+}
+.swiper-slide13 .why{
+	margin-top:1rem;
+}
+.swiper-slide13 p{
+	margin-top:0.5rem;
+	line-height:0.26rem;
+}
+.swiper-slide13 p>img{
+	width: 2.38rem;
+	height:2.39rem;
+}
+.swiper-slide13 p:nth-child(1){
+	font-size: 0.25rem;
+	font-weight: 900;
+}
+.swiper-slide13 p:nth-child(3){
+	/*font-size: 1.25rem;
+	font-weight: 900;*/
+}

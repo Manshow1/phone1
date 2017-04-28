@@ -1,0 +1,47 @@
+.swiper-slide9{
+	margin-top: 0.1rem;
+	width: 100%;
+	height: 100%;
+	background: url(../img/BACK.png);
+}
+.swiper-slide9>p{
+	width: 100%;
+	height: 2.45rem;
+	line-height: '3px';
+	text-align: center;
+	color: #FFFFFF;
+	font-family: "微软雅黑";
+	font-weight: 900;
+	font-size: 0.5em;
+	line-height: 2rem;
+	margin-top: 0.3rem;
+}
+.swiper-slide9 p:nth-child(1){
+	height: 3.5rem;
+	background: url(../img/community.png) no-repeat;
+	background-size: 100% 100%;
+}
+.swiper-slide9 p:nth-child(2){
+	height: 3.5rem;
+	background: url(../img/supermarket.png) no-repeat;
+	background-size: 100% 100%;
+}
+.swiper-slide9 p:nth-child(3){
+	height: 3.5rem;
+	background: url(../img/farmer.png) no-repeat;
+	background-size: 100% 100%;
+}
+.swiper-slide9>div{
+	font-family: "微软雅黑";
+	color: #644023;
+	text-align: center;
+	margin-top:5px;
+	font-size: 0.2rem;
+}
+.swiper-slide9>span{
+	display: block;
+	width:1.04rem;
+	height: 0.08rem;
+	background: url(../img/tiao.png);
+	margin:50px auto;
+}

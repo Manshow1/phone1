@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <!--bootstrap的兼容问题 主要是IE的-->
+    <meta http-equiv="X-UA-Compatible" content=”IE=edge,chrome=1″ />
+    <meta http-equiv="X-UA-Compatible" content=“IE=8″ />
+    <!--让bootstrap兼容国产高速浏览器-->
+    <meta name="randerer" content="webkit"/>
+    <meta name="format-detection" content="telephone=no" />
+    <!--实现相应式效果的标签-->
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1"/>-->
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no"/>
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/swiper2.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/respond.min.js"></script>
+</head>
+<body>
+<div class="main" style="width: 100%;height: 100%">
+    <!--logo-->
+    <div class="main-top">
+        <div class="first"></div>
+        <img src="img/index/head_line.png" alt="" class="linhead secondImg" >
+        <ul class="main-top-nav linhead " style="width: 100%" >
+            <li><a href="index.html" class="orange">首页</a></li>
+            <li><a href="javascript:void (0)" class="orange bangshe">邦舍</a>
+                <ul class="area">
+                    <li>
+                        杭州
+                        <a href="indexdetail.html" class="project">远洋金座公寓</a>
+                    </li>
+                    <li>
+                        北京
+                        <a href="javascript:void(0)" class="project"></a>
+                    </li>
+                    <p class="sanjiao"></p>
+                </ul>
+            </li>
+            <li>
+                <a href="indexdetail_2.html" class="orange">关于我们</a>
+            </li>
+        </ul>
+    </div>
+    <!--移动端侧边栏-->
+    <ul class="t-cbl">
+        <li><a href="index.html" class="t-orange">首页</a></li>
+        <li>
+            <a href="javascript:void (0)" class="t-orange t-bangshe">邦舍</a>
+            <ul class="t-area">
+                <li>
+                    杭州
+                    <a href="indexdetail.html" class="t-project">远洋金座公寓</a>
+                </li>
+                <li>
+                    北京
+                    <a href="javascript:void(0)" class="t-project"></a>
+                </li>
+                <p class="t-sanjiao"></p>
+            </ul>
+        </li>
+        <li><a href="indexdetail_2.html" class="t-orange">关于</a></li>
+    </ul>
+
+
+    <!--轮播-->
+    <div class="swiper-container" style="width: 100%;height: 100%">
+        <div class="swiper-wrapper" style="width: 100%;height: 100%">
+            <!--第一张轮播-->
+            <div class="swiper-slide Img1" style="width: 100%;height: 100%" >
+                <!--<img src="img/index/feature.png" alt="" class="futrue">-->
+                <div class="futrue"></div>
+            </div>
+            <!--第二张轮播-->
+            <div class="swiper-slide Img2" style="width: 100%;height: 100%">
+                <div class="hz">
+                    <div>
+                        <p class="title">杭州七宝公寓邦舍</p>
+                        <div class="dot"></div>
+                        <p class="content font-spacing">独立卫生间,自带阳台,步行5分钟到地铁口</p>
+                        <P class="content font-spacing">现预定可享受超值优惠</p>
+                        <div class="line"></div>
+                    </div>
+                    <a class="btn btn-info" href="indexdetail.html">预定</a>
+                </div>
+            </div>
+            <!--第三张轮播-->
+            <div class="swiper-slide Img3" style="width: 100%;height: 100%">
+                <div class="yl">
+                    <p class="title">邦舍复式小楼精装</p>
+                   <div class="dot"></div>
+                    <p class="content font-spacing">复式2层小楼,自带小院,停车免费,交通便捷</p>
+                    <p class="content font-spacing">现预定可享受超值优惠</p>
+                    <p class="sContent font-spacing">欢迎您的光临,临时预定,享受超低超值优惠</p>
+                    <a class="btn btn-info" href="indexdetail.html">预定</a>
+                </div>
+            </div>
+            <!--第四张轮播-->
+            <div class="swiper-slide Img4" style="width: 100%;height: 100%">
+                <div class="hy">
+                    <div>
+                        <p class="title">空中花园公寓精装</p>
+                        <!--<img src="img/index/smallline.png" alt="" class="dot">-->
+                        <div class="smallLine"></div>
+                        <p class="content font-spacing">独立厨房,超大空间,现代设计,家具齐全,12月份预定</p>
+                        <p class="content font-spacing">可享受八折优惠,接受半年预约</p>
+                        <p class="content font-spacing dot1">可提前参观看房,超值优惠,仅限12月份预订者</p>
+                        <!--<img src="img/index/lagline.png" alt="" class="dot" >-->
+                        <div class="lagLine"></div>
+                        <a class="btn btn-info" href="indexdetail.html">预定</a>
+                        <p class="tel">010-5083/1555</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination"></div>
+    </div>
+
+
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/swiper2.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    window.onload = function() {
+        var mySwiper = new Swiper('.swiper-container',{
+            autoplay: 5000,
+            loop: true,
+            pagination: '.pagination',
+            paginationClickable :true,
+            autoplayDisableOnInteraction : true
+            //其他设置
+        });
+    }
+</script>
+</body>
+</html>

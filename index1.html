@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="swiper/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" href="swiper/animate.min.css"/>
+    <style>
+        body,html{
+            width:80%;
+            height:80%;
+        }
+        .swiper-container{
+            width:100%;
+            height:50%;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <div id="s1" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background:#f00;">Slide 1</div>
+            <div class="swiper-slide" style="background:#0f0;">Slide 2</div>
+            <div class="swiper-slide" style="background:#00f;">Slide 3</div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev" ></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+
+<script src="swiper/jquery-1.10.1.min.js"></script>
+<script src="swiper/swiper-3.3.1.min.js"></script>
+<script src="swiper/swiper.animate1.0.2.min.js"></script>
+    <script>
+//      var mySwiper = new Swiper ('.swiper-container', {
+//          /*direction: 'vertical',*/          //控制滑动方向
+//          loop: true,                          //拖动完一圈后 是否变回开始
+//
+//          // 如果需要分页器
+//          pagination: '.swiper-pagination',
+//
+//          // 如果需要前进后退按钮
+//          nextButton: '.swiper-button-next',
+//          prevButton: '.swiper-button-prev',
+//
+//          // 如果需要滚动条
+//          scrollbar: '.swiper-scrollbar',
+//          autoplay : 1000,
+//          /*autoplayStopOnLast : true   */            //如果loop为false时生效
+//                                                      // 走到最后一张图片时不再自动播放
+//          initialSlide :1
+//
+//      })
+            var newSlideSize = function slideSize(){
+	        var w = Math.ceil($(".swiper-container").width()/3/*--调整高度---*/);
+	        $(".swiper-container1,.swiper-wrapper,.swiper-slide").height(w);
+	    };
+	    newSlideSize();
+	    $(window).resize(function(){
+	        newSlideSize();
+	    });
+	
+	    var mySwiper = new Swiper('.swiper-container1',{
+	        pagination: '.pagination',
+	        loop:true,
+	        autoplay:3000,
+	        paginationClickable: true,
+	        onSlideChangeStart: function(){
+	            //回调函数
+	        }
+	    });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+.swiper-slide6{
+	width: 100%;
+	background: #4d3a2e;
+}
+.swiper-slide6>.why{
+	text-align: center; 
+	font-size: 0.4em;
+	margin-top: 1.5rem;
+	color: #FFFFFF;
+}
+.swiper-slide6>.why>span{
+	font-size: 0.7rem;
+	font-weight: 900;
+}
+.swiper-slide6>.banner_report>ul{
+	width: 100%;
+}
+.swiper-slide6>.banner_report>ul>li{
+	width: 80%;
+	margin: auto;
+}
+.swiper-slide6>.banner_report>ul>li>img{
+	width: 2.61rem;
+	height: 3.69rem;
+	background-size:100% 100%;
+}
+#banner_rece .swiper-container2 .swiper-slide>img{
+	width: 30%;
+	margin-top: 1.5rem;
+} 
+#banner_rece>.SW3 img{
+	width:35%;
+	height: 3.67rem;
+	margin-left:10%;
+}
+#banner_rece>.SW3 .btn2>img{
+	width: 0.29rem;
+	height:0.53rem ;
+	background-size: 100% 100%;
+	position: absolute;
+    top:0%
+	right: 5%;
+}
+.swiper-slide6 p{
+	margin-top: 1rem;
+	font-size: 0.5rem;
+	text-align: center;
+	color: #FFFFFF;
+}

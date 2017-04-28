@@ -1,0 +1,211 @@
+/*  定义全局样式   */
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd{
+	margin: 0px;
+	padding: 0px;
+}
+ul,ol,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #656565;
+}
+a:hover{
+	color: #C40000;
+}
+img{
+	vertical-align: middle;
+}
+.lf{
+	float: left;
+}
+.rt{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+html { 
+	height: 100%;
+	width: 100%; 
+	font-family: 'Heiti SC', 'Microsoft YaHei'; 
+	font-size: 1rem; 
+	outline: 0; 
+	-webkit-text-size-adjust:none;
+	position: relative;
+}
+body { 
+	height: 100%; 
+	margin: 0; 
+	-webkit-user-select: none; 
+	position: relative;
+}
+/*遮罩层 */
+#mask layer{
+ 	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	background-size: 100% 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 10000;
+}
+.mobile-inner-nav a{
+		-webkit-animation-duration: 0.5s;
+		animation-duration: 0.5s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-name: returnToNormal;
+		animation-name: returnToNormal;
+	}
+			
+	@-webkit-keyframes returnToNormal {
+	  0% {
+	    opacity: 0;
+	    -webkit-transform: translate3d(0, -100%, 0);
+	            transform: translate3d(0, -100%, 0);
+	  }
+
+	  100% {
+	    opacity: 1;
+	    -webkit-transform: none;
+	            transform: none;
+	  }
+	}
+
+	@keyframes returnToNormal {
+	  0% {
+	    opacity: 0;
+	    -webkit-transform: translate3d(0, -100%, 0);
+	            transform: translate3d(0, -100%, 0);
+	  }
+
+	  100% {
+	    opacity: 1;
+	    -webkit-transform: none;
+	            transform: none;
+	  }
+	}
+/* 头部 */
+#header_box{
+	width: 100%;
+	line-height:0.93rem;
+	background: #FFFFFF;
+	z-index: 100;
+	position: fixed;
+	top:0px;
+} 
+.header{
+	width: 100%;
+	margin:0 0.21rem;
+}  
+.header .logo{
+	width: 30%;
+}
+.share{
+	width:25%;
+}
+.header .logo>img{
+	width: 100%;
+}
+.header .share>img{
+	width: 30%;
+}
+.header .share>img:hover{
+	cursor:pointer;
+}
+
+/* 滑动页面  */
+.swiper-container {
+	width: 100%;
+    height: 100%;
+    /*margin-top: 50px;*/
+}
+.swiper-slide{
+	/*margin-top: 50px;*/
+}
+.page2{
+    height: auto;
+}
+.swiper-slide>.why{
+	text-align:center; 
+	font-size: 0.3em;
+	margin-top: 1rem;
+}
+.swiper-slide>.why>span{
+	text-align: center; 
+	font-size: 0.5rem;
+	font-weight: 900;
+}
+.swiper-slide1{
+	position:relative;
+	background: url(../img/homebk.png) no-repeat;
+	background-size:100% 100%;
+}
+.swiper-slide1 p{
+	text-align: center;
+}
+.swiper-slide1 p:first-child{
+	text-align: center;
+	line-height: 0.03rem;
+	font-size: 0.43em;
+	color:#383838;
+	position: absolute;
+	top:25%;
+	left: 18%;
+}
+.swiper-slide1 p:nth-child(2){
+	color:#000000;
+	font-weight: 900;
+	font-size:1em;
+	position: absolute;
+	top:28%;
+	left: 17.5%;
+}
+.swiper-slide1 .btn{
+	padding: 0.05rem 0.3rem;
+	background: #FFFFFF;
+	border-radius:0.07rem;
+	outline: none;
+	border: none;
+	font-size: 0.5em;
+	position: absolute;
+	top:57%;
+	left:28.5%;
+}
+.swiper-slide1 p:nth-child(3){
+	color:#FFFFFF;
+	font-weight: 900;
+	font-size: 0.6em;
+	position: absolute;
+	top:65%;
+	left: 20.3%;
+}
+.swiper-slide1 p:nth-child(4){
+	text-align: center;
+	color:#FFFFFF;
+	font-size: 0.4em;
+	position: absolute;
+	top:73%;
+	left: 33.5%;
+}
+.swiper-slide1 p:nth-child(5){
+	color:#FFFFFF;
+	font-size: 0.41em;
+	position: absolute;
+	top:80%;
+	left: 25.5%;
+}
+.swiper-slide1 p:nth-child(6){
+	color:#FFFFFF;
+	position: absolute;
+	top:85%;
+	left:34.5%;
+}
+.swiper-slide1 p:last-child>img{
+	width:80%;
+	margin-left: 41.5%;
+	background-size:100% 100% ;
+	text-align: center;
+}

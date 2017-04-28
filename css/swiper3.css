@@ -1,0 +1,27 @@
+.swiper-slide3{
+	color: #644023;
+	margin-top:0.9rem;
+}
+.swiper-slide3>p{
+	color: #644023;
+	font-family: "微软雅黑";
+	font-size: 0.4rem;
+	font-weight:900 ;
+	width: 80%;
+	margin:10px auto;
+	margin-top: 0.5rem;
+}
+.swiper-slide3>span{
+	color: #644023;
+	display: block;
+	width: 80%;
+	/*word-spacing: 10pt;
+	letter-spacing:10px;*/
+	text-align: left;
+	margin:0.2rem auto;
+	font-size: 0.23rem;
+	line-height: 0.25rem;
+}
+.swiper-slide3>p>i{
+	font-size: 0.3rem;
+}

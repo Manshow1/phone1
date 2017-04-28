@@ -1,0 +1,26 @@
+.swiper-slide10>.why>p{
+	font-size: 0.2rem;
+	font-style: normal;
+	letter-spacing:11px;
+}
+.swiper-slide10>p{
+	font-family: "微软雅黑";
+	font-size: 0.3rem;
+	color: #644023;
+	font-weight:900 ;
+	width: 80%;
+	margin:149px auto;
+}
+.swiper-slide10>p>b{
+	font-size: 0.15rem;
+}
+.swiper-slide10>span{
+	display: block;
+	width: 80%;
+	word-spacing: 10pt;
+	letter-spacing:10px;
+	text-align: left;
+	margin:0.2rem auto;
+	font-size: 0.1558rem;
+	line-height: 0.25rem;
+}
